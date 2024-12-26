@@ -5,12 +5,12 @@
 	import SocialButton from '$components/SocialButton.svelte';
 </script>
 
-<div id="projects" class="mx-auto my-32 w-3/4">
+<div id="projects" class="mx-auto my-32 px-10 md:w-3/4 md:px-0">
 	<Panel>
 		<Header>FEATURED PROJECTS</Header>
 
 		<div class="mt-20 flex flex-col justify-center gap-10 font-thin leading-loose">
-			<div class="flex gap-10">
+			<div class="flex flex-col items-center gap-10 md:flex-row">
 				<div class="w-96 flex-shrink-0">
 					<img
 						src="images/screenshot/yield-app-screenshot.png"
@@ -30,11 +30,14 @@
 					</p>
 
 					<p>
-						Unfortunately Yield App went into liquidation in July 2024 and its source code is not
-						open.
+						Yield App went into liquidation in July 2024 and its source code is not open. I have
+						created a <a
+							class="text-amber-600 underline decoration-dashed underline-offset-4 hover:text-amber-700"
+							href="https://yield-app-demo.netlify.app/dashboard">demo version</a
+						> for review. Note that this will show a number of console errors.
 					</p>
 
-					<div class="flex gap-2">
+					<div class="flex flex-wrap gap-2">
 						<Tag variant="frontend">NextJS</Tag>
 						<Tag variant="frontend">React</Tag>
 						<Tag variant="frontend">TypeScript</Tag>
@@ -46,7 +49,7 @@
 				</div>
 			</div>
 
-			<div class="flex gap-10">
+			<div class="flex flex-col items-center gap-10 md:flex-row">
 				<div class="w-96 flex-shrink-0">
 					<img
 						src="images/screenshot/water-ledger-screenshot.png"
@@ -86,7 +89,7 @@
 						</SocialButton>
 					</div>
 
-					<div class="flex gap-2">
+					<div class="flex flex-wrap gap-2">
 						<Tag variant="frontend">React</Tag>
 						<Tag variant="frontend">TypeScript</Tag>
 						<Tag variant="backend">NodeJS</Tag>
@@ -98,7 +101,7 @@
 				</div>
 			</div>
 
-			<div class="flex gap-10">
+			<div class="flex flex-col items-center gap-10 md:flex-row">
 				<div class="w-96 flex-shrink-0">
 					<img
 						src="images/screenshot/earnsmart-screenshot2.png"
@@ -139,7 +142,7 @@
 						</SocialButton>
 					</div>
 
-					<div class="flex gap-2">
+					<div class="flex flex-wrap gap-2">
 						<Tag variant="frontend">NextJS</Tag>
 						<Tag variant="frontend">React</Tag>
 						<Tag variant="frontend">TypeScript</Tag>
@@ -150,7 +153,7 @@
 				</div>
 			</div>
 
-			<div class="flex gap-10">
+			<div class="flex flex-col items-center gap-10 md:flex-row">
 				<div class="w-96 flex-shrink-0">
 					<img
 						src="images/screenshot/catan-screenshot.png"
@@ -190,7 +193,7 @@
 						</SocialButton> -->
 					</div>
 
-					<div class="flex gap-2">
+					<div class="flex flex-wrap gap-2">
 						<Tag variant="frontend">React</Tag>
 						<Tag variant="frontend">TypeScript</Tag>
 						<Tag variant="blockchain">Testing</Tag>

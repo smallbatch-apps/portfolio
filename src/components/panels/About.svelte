@@ -6,7 +6,9 @@
 <div class="flex flex-col items-center gap-20 bg-red-400 py-40" id="about">
 	<Header dark={true}>THE <span class="text-amber-200">SHORT</span> AND SWEET VERSION</Header>
 
-	<div class="container mx-auto text-center text-xl font-light leading-loose text-white">
+	<div
+		class="mb:px-0 container mx-auto px-10 text-center text-xl font-light leading-loose text-white"
+	>
 		I am an experienced Australian developer who currently lives in Bangkok, Thailand. Although I
 		have been working in the field for more than 25 years I keep my skills constantly honed for the
 		changing market and an always a current and active learner. My primary focuses are on web

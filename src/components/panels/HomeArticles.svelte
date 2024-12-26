@@ -7,7 +7,7 @@
 	<Panel>
 		<Header><span class="text-amber-200">LATEST</span> ARTICLES</Header>
 
-		<div class="mx-auto mt-32 flex w-2/3 gap-10">
+		<div class="mx-auto mt-32 flex flex w-full flex-col gap-10 md:w-2/3 md:flex-row">
 			<a
 				href="https://mattburgess.medium.com/why-would-i-use-react-hook-form-8ae7b905953e"
 				target="_blank"
