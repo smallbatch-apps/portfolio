@@ -1,23 +1,48 @@
-<script>
+<script lang="ts">
 	import Panel from '$components/Panel.svelte';
 	import Header from '$components/Header.svelte';
 	import Tag from '$components/Tag.svelte';
 	import SocialButton from '$components/SocialButton.svelte';
+	let expandedImage: string | null = null;
+
+	const handleClose = () => (expandedImage = null);
+	const handleKeydown = (e: KeyboardEvent) => {
+		if (e.key === 'Escape') handleClose();
+	};
 </script>
 
 <div id="projects" class="mx-auto my-32 px-10 md:w-3/4 md:px-0">
 	<Panel>
 		<Header>FEATURED PROJECTS</Header>
-
+		{#if expandedImage}
+			<button
+				type="button"
+				aria-label="Close image preview"
+				class="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+				on:click={handleClose}
+				on:keydown={handleKeydown}
+			>
+				<img
+					src={expandedImage}
+					alt="Expanded view"
+					class="max-h-[90vh] max-w-[90vw] object-contain"
+				/>
+			</button>
+		{/if}
 		<div class="mt-20 flex flex-col justify-center gap-10 font-thin leading-loose">
 			<div class="flex flex-col items-center gap-10 md:flex-row">
-				<div class="w-96 flex-shrink-0">
+				<button
+					type="button"
+					class="w-96 flex-shrink-0"
+					on:click={() => (expandedImage = 'images/screenshot/catan-screenshot2.png')}
+					aria-label="View larger image"
+				>
 					<img
 						src="images/screenshot/catan-screenshot2.png"
 						class="w-96 rounded border"
 						alt="Blockchain Catan"
 					/>
-				</div>
+				</button>
 				<div class="flex flex-col gap-4">
 					<h2 class="text-2xl font-semibold tracking-widest text-red-400">Blockchain Catan</h2>
 
@@ -61,13 +86,18 @@
 			</div>
 
 			<div class="flex flex-col items-center gap-10 md:flex-row">
-				<div class="w-96 flex-shrink-0">
+				<button
+					type="button"
+					class="w-96 flex-shrink-0"
+					on:click={() => (expandedImage = 'images/screenshot/earnsmart-screenshot2.png')}
+					aria-label="View larger image"
+				>
 					<img
 						src="images/screenshot/earnsmart-screenshot2.png"
 						class="w-96 rounded border"
 						alt="Water Ledger"
 					/>
-				</div>
+				</button>
 				<div class="flex flex-col gap-4">
 					<h2 class="text-2xl font-semibold tracking-widest text-red-400">EarnSmart</h2>
 
@@ -113,13 +143,18 @@
 			</div>
 
 			<div class="flex flex-col items-center gap-10 md:flex-row">
-				<div class="w-96 flex-shrink-0">
+				<button
+					type="button"
+					class="w-96 flex-shrink-0"
+					on:click={() => (expandedImage = 'images/screenshot/yield-app-screenshot.png')}
+					aria-label="View larger image"
+				>
 					<img
 						src="images/screenshot/yield-app-screenshot.png"
 						class="w-96 rounded border"
 						alt="Yield App v3"
 					/>
-				</div>
+				</button>
 				<div class="flex flex-col gap-4">
 					<h2 class="text-2xl font-semibold tracking-widest text-red-400">Yield App V3</h2>
 
@@ -152,13 +187,18 @@
 			</div>
 
 			<div class="flex flex-col items-center gap-10 md:flex-row">
-				<div class="w-96 flex-shrink-0">
+				<button
+					type="button"
+					class="w-96 flex-shrink-0"
+					on:click={() => (expandedImage = 'images/screenshot/water-ledger-screenshot.png')}
+					aria-label="View larger image"
+				>
 					<img
 						src="images/screenshot/water-ledger-screenshot.png"
 						class="w-96 rounded border"
 						alt="Water Ledger"
 					/>
-				</div>
+				</button>
 				<div class="flex flex-col gap-4">
 					<h2 class="text-2xl font-semibold tracking-widest text-red-400">Water Ledger</h2>
 
