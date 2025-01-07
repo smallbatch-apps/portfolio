@@ -9,6 +9,30 @@
 
 		<div class="mx-auto mt-32 flex flex w-full flex-col gap-10 md:w-2/3 md:flex-row">
 			<a
+				href="https://medium.com/@mattburgess/react-hook-form-vs-react-19-1e28009e6557"
+				target="_blank"
+				class="flex flex-1 cursor-pointer flex-col gap-4 border border-transparent p-4 hover:border-gray-300"
+			>
+				<img
+					src="/images/articles/article-rhfvsr19.jpg"
+					class="border border-2 border-red-400"
+					alt="React Hook Form vs React 19"
+				/>
+				<div>
+					<h2 class="text-2xl font-semibold text-red-400">React Hook Form vs React 19</h2>
+
+					<div class="flex items-center justify-between gap-2 text-gray-500">
+						<span class="text-sm text-gray-500">9 min read</span>
+						<span class="text-sm text-gray-500">Jan 2, 2025</span>
+					</div>
+				</div>
+				<p>
+					Well this is awkward. Just as I was finishing and publishing a video on why to use React
+					Hook Form instead of React, React 19 comes out with a massive revamp of form handling.
+					Let&apos;s break it down.
+				</p>
+			</a>
+			<a
 				href="https://mattburgess.medium.com/why-would-i-use-react-hook-form-8ae7b905953e"
 				target="_blank"
 				class="flex flex-1 cursor-pointer flex-col gap-4 border border-transparent p-4 hover:border-gray-300"
@@ -55,7 +79,7 @@
 					let&apos;s go through some of the options.
 				</p>
 			</a>
-			<a
+			<!-- <a
 				href="https://mattburgess.medium.com/select-star-from-database-350b85ef9657"
 				target="_blank"
 				class="flex flex-1 cursor-pointer flex-col gap-4 border border-transparent p-4 hover:border-gray-300"
@@ -77,7 +101,7 @@
 					It&apos;s come to my attention that a lot of people have a limited understanding of the
 					variety and diversity of database solutions that exist. Let&apos;s change that now.
 				</p>
-			</a>
+			</a> -->
 		</div>
 
 		<div class="mt-20 text-center text-xl font-semibold tracking-widest">
