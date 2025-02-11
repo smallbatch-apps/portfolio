@@ -1,107 +1,75 @@
 <script>
 	import Panel from '$components/Panel.svelte';
 	import Header from '$components/Header.svelte';
+	import ArticleItem from '$components/ArticleItem.svelte';
 </script>
 
 <div id="articles" class="py-32">
 	<Panel>
 		<Header><span class="text-amber-200">LATEST</span> ARTICLES</Header>
 
-		<div class="mx-auto mt-32 flex flex w-full flex-col gap-10 md:w-2/3 md:flex-row">
-			<a
-				href="https://medium.com/@mattburgess/react-hook-form-vs-react-19-1e28009e6557"
-				target="_blank"
-				class="flex flex-1 cursor-pointer flex-col gap-4 border border-transparent p-4 hover:border-gray-300"
-			>
-				<img
-					src="/images/articles/article-rhfvsr19.jpg"
-					class="border border-2 border-red-400"
-					alt="React Hook Form vs React 19"
-				/>
-				<div>
-					<h2 class="text-2xl font-semibold text-red-400">React Hook Form vs React 19</h2>
-
-					<div class="flex items-center justify-between gap-2 text-gray-500">
-						<span class="text-sm text-gray-500">9 min read</span>
-						<span class="text-sm text-gray-500">Jan 2, 2025</span>
-					</div>
-				</div>
-				<p>
-					Well this is awkward. Just as I was finishing and publishing a video on why to use React
+		<div class="mx-auto mt-32 grid w-full grid-cols-3 flex-col gap-10 md:w-2/3 md:flex-row">
+			<ArticleItem
+				url="https://mattburgess.medium.com/the-problem-with-nextjs-e44fd4c99d20"
+				title="The Problem With NextJS"
+				description="I&apos;ve been working with NextJS for a few years now, and the more I&apos;ve used it,
+					and in more contexts, the clearer it has become that NextJS has a major issue."
+				image="article-nextjs.jpg"
+				readTime="10 min read"
+				publishDate="Feb 10, 2025"
+			/>
+			<ArticleItem
+				url="https://medium.com/@mattburgess/react-hook-form-vs-react-19-1e28009e6557"
+				title="Why I Use Tailwind"
+				description="And why you should too. Tailwind has quickly become the dominant way to style UIs. But
+					with success comes the inevitable backlash. Tailwind seems to be getting some pushback
+					lately, so I thought I&apos;d tackle it directly."
+				image="article-tailwind.jpg"
+				readTime="14 min read"
+				publishDate="Feb 6, 2025"
+			/>
+			<ArticleItem
+				url="https://medium.com/@mattburgess/react-hook-form-vs-react-19-1e28009e6557"
+				title="In Defence of Agile"
+				description="Developers don&apos;t much like “process”, and Agile has become a bit of an industry punching bag. Here&apos;s why memes shouldn&apos;t be your guide to good software practise."
+				image="article-agile.jpg"
+				readTime="11 min read"
+				publishDate="31 Jan, 2025"
+			/>
+			<ArticleItem
+				url="https://medium.com/@mattburgess/react-hook-form-vs-react-19-1e28009e6557"
+				title="React Hook Form vs React 19"
+				description="Well this is awkward. Just as I was finishing and publishing a video on why to use React
 					Hook Form instead of React, React 19 comes out with a massive revamp of form handling.
-					Let&apos;s break it down.
-				</p>
-			</a>
-			<a
-				href="https://mattburgess.medium.com/why-would-i-use-react-hook-form-8ae7b905953e"
-				target="_blank"
-				class="flex flex-1 cursor-pointer flex-col gap-4 border border-transparent p-4 hover:border-gray-300"
-			>
-				<img
-					src="/images/articles/article-react-hook-form.jpg"
-					class="border border-2 border-red-400"
-					alt="React Hook Form"
-				/>
-				<div>
-					<h2 class="text-2xl font-semibold text-red-400">Why would I use React Hook Form?</h2>
-					<div class="flex items-center justify-between gap-2 text-gray-500">
-						<span class="text-sm text-gray-500">10 min read</span>
-						<span class="text-sm text-gray-500">Dec 19, 2024</span>
-					</div>
-				</div>
-				<p>
-					Forms are some of the more complicated things we do in the web, and we don&apos;t always
-					do them well. React Hook Form can be a way to tame this complexity, so let&apos;s go
-					through it.
-				</p>
-			</a>
-			<a
-				href="https://mattburgess.medium.com/what-language-should-you-learn-f5fbaf36baad"
-				target="_blank"
-				class="flex flex-1 cursor-pointer flex-col gap-4 border border-transparent p-4 hover:border-gray-300"
-			>
-				<img
-					src="/images/articles/article-choose.jpg"
-					class="border border-2 border-red-400"
-					alt="What language should you learn?"
-				/>
-				<div>
-					<h2 class="text-2xl font-semibold text-red-400">What Language Should You Learn?</h2>
-
-					<div class="flex items-center justify-between gap-2 text-gray-500">
-						<span class="text-sm text-gray-500">10 min read</span>
-						<span class="text-sm text-gray-500">Dec 8, 2024</span>
-					</div>
-				</div>
-				<p>
-					Most of us have stopped at various times and thought that it&apos;s time we learned a new
-					language. But if you&apos;re anything like me you&apos;ve got analysis paralysis. So
-					let&apos;s go through some of the options.
-				</p>
-			</a>
-			<!-- <a
-				href="https://mattburgess.medium.com/select-star-from-database-350b85ef9657"
-				target="_blank"
-				class="flex flex-1 cursor-pointer flex-col gap-4 border border-transparent p-4 hover:border-gray-300"
-			>
-				<img
-					src="/images/articles/article-databases.jpg"
-					class="border border-2 border-red-400"
-					alt="Select Star from Database"
-				/>
-				<div>
-					<h2 class="text-2xl font-semibold text-red-400">Select Star from Database</h2>
-
-					<div class="flex items-center justify-between gap-2 text-gray-500">
-						<span class="text-sm text-gray-500">25 min read</span>
-						<span class="text-sm text-gray-500">Nov 23, 2024</span>
-					</div>
-				</div>
-				<p>
-					It&apos;s come to my attention that a lot of people have a limited understanding of the
-					variety and diversity of database solutions that exist. Let&apos;s change that now.
-				</p>
-			</a> -->
+					Let&apos;s break it down."
+				image="article-rhfvsr19.jpg"
+				readTime="9 min read"
+				publishDate="Jan 2, 2025"
+			/>
+			<ArticleItem
+				url="https://mattburgess.medium.com/why-would-i-use-react-hook-form-8ae7b905953e"
+				title="Why would I use React Hook Form?"
+				description="Forms are some of the more complicated things we do in the web, and we don&apos;t always do them well. React Hook Form can be a way to tame this complexity, so let&apos;s go through it."
+				image="article-react-hook-form.jpg"
+				readTime="10 min read"
+				publishDate="Dec 19, 2024"
+			/>
+			<ArticleItem
+				url="https://mattburgess.medium.com/what-language-should-you-learn-f5fbaf36baad"
+				title="What language should you learn?"
+				description="Most of us have stopped at various times and thought that it&apos;s time we learned a new language. But if you&apos;re anything like me you&apos;ve got analysis paralysis. So let&apos;s go through some of the options."
+				image="article-choose.jpg"
+				readTime="10 min read"
+				publishDate="Dec 8, 2024"
+			/>
+			<ArticleItem
+				url="https://mattburgess.medium.com/select-star-from-database-350b85ef9657"
+				title="Select Star from Database"
+				description="It&apos;s come to my attention that a lot of people have a limited understanding of the variety and diversity of database solutions that exist. Let&apos;s change that now."
+				image="article-databases.jpg"
+				readTime="25 min read"
+				publishDate="Nov 23, 2024"
+			/>
 		</div>
 
 		<div class="mt-20 text-center text-xl font-semibold tracking-widest">
