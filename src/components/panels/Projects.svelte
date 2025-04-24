@@ -34,6 +34,50 @@
 				<button
 					type="button"
 					class="w-96 flex-shrink-0"
+					on:click={() => (expandedImage = 'images/screenshot/crab-screenshot.png')}
+					aria-label="View larger image"
+				>
+					<img
+						src="images/screenshot/crab-screenshot.png"
+						class="w-96 rounded border"
+						alt="Crab CLI"
+					/>
+				</button>
+				<div class="flex flex-col gap-4">
+					<h2 class="text-2xl font-semibold tracking-widest text-red-400">Crab CLI</h2>
+
+					<p>A command-line tool to generate the component boilerplate for React components.</p>
+					<p>
+						Promotional and documentation website features a hand-drawn svg character with detailed
+						rigging and animation that will be extended over time.
+					</p>
+
+					<div>
+						<SocialButton
+							variant="white"
+							size="small"
+							url="https://github.com/smallbatch-apps/crab"
+						>
+							<i class="fa-brands fa-github"></i> CLI Repository
+						</SocialButton>
+
+						<SocialButton variant="white" size="small" url="https://crab-cli.app">
+							🦀 Website
+						</SocialButton>
+					</div>
+
+					<div class="flex flex-wrap gap-2">
+						<Tag variant="frontend">React</Tag>
+						<Tag variant="frontend">TypeScript</Tag>
+						<Tag variant="backend">Command-line</Tag>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-col items-center gap-10 md:flex-row">
+				<button
+					type="button"
+					class="w-96 flex-shrink-0"
 					on:click={() => (expandedImage = 'images/screenshot/catan-screenshot2.png')}
 					aria-label="View larger image"
 				>
@@ -112,7 +156,7 @@
 						Frontend is a simple NextJS application intended to demonstrate the functionality of the
 						backend.
 					</p>
-
+					<!-- 
 					<div>
 						<SocialButton
 							variant="white"
@@ -128,8 +172,8 @@
 							url="https://github.com/smallbatch-apps/earnsmart-frontend"
 						>
 							<i class="fa-brands fa-github"></i> Frontend
-						</SocialButton>
-					</div>
+						</SocialButton> 
+					</div>-->
 
 					<div class="flex flex-wrap gap-2">
 						<Tag variant="frontend">NextJS</Tag>

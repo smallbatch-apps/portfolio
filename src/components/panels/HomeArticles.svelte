@@ -10,6 +10,22 @@
 
 		<div class="mx-auto mt-32 grid w-full grid-cols-3 flex-col gap-10 md:w-2/3 md:flex-row">
 			<ArticleItem
+				url="https://medium.com/@mattburgess/javascript-shinies-map-set-and-symbol-11bc4f0d2fbf"
+				title="Javascript Shinies: Map, Set and Symbol"
+				description="It&apos;s come to my attention recently that Map, Set and set in particular are often seen as just Array and Object with… fancy. Let&apos;s dig more into them and see why they&apos;re more than that."
+				image="article-map.jpg"
+				readTime="9 min read"
+				publishDate="Apr 9, 2025"
+			/>
+			<ArticleItem
+				url="https://medium.com/@mattburgess/frontend-security-the-front-fell-off-045091079104"
+				title="Frontend Security: The Front Fell Off"
+				description="As frontend developers we often thing of security as a somebody-else problem. It&apos;s true that the bigger issues are tackled in the backend, but as frontend developer there are specific concerns that we need to be aware of."
+				image="article-frontend-security.jpg"
+				readTime="14 min read"
+				publishDate="Mar 18, 2025"
+			/>
+			<ArticleItem
 				url="https://mattburgess.medium.com/the-problem-with-nextjs-e44fd4c99d20"
 				title="The Problem With NextJS"
 				description="I&apos;ve been working with NextJS for a few years now, and the more I&apos;ve used it,
@@ -46,7 +62,7 @@
 				readTime="9 min read"
 				publishDate="Jan 2, 2025"
 			/>
-			<ArticleItem
+			<!-- <ArticleItem
 				url="https://mattburgess.medium.com/why-would-i-use-react-hook-form-8ae7b905953e"
 				title="Why would I use React Hook Form?"
 				description="Forms are some of the more complicated things we do in the web, and we don&apos;t always do them well. React Hook Form can be a way to tame this complexity, so let&apos;s go through it."
@@ -69,7 +85,7 @@
 				image="article-databases.jpg"
 				readTime="25 min read"
 				publishDate="Nov 23, 2024"
-			/>
+			/> -->
 		</div>
 
 		<div class="mt-20 text-center text-xl font-semibold tracking-widest">
